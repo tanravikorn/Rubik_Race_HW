@@ -1,0 +1,19 @@
+# Output folder
+output/
+
+# Output files
+out1.txt
+out2.txt
+out3.txt
+out4.txt
+out5.txt
+out6.txt
+
+# Executable files
+*.exe
+
+
+
+# Documentation files
+statement.md
+datatest.md
