@@ -103,6 +103,7 @@ module top_module(
     wire [16:0] read_addr;
     camera_capture capture(
         .pclk(pclk),
+        .reset(sys_reset),
         .vsync(ov_vsync),
         .href(ov_href),
         .d(d),
