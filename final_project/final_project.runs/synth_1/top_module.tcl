@@ -56,13 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param general.usePosixSpawnForFork 1
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -94,7 +88,7 @@ set_property used_in_implementation false [get_files -all c:/Users/Lenovo/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/Lenovo/Desktop/hw/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Lenovo/Desktop/hw/final_project/final_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/Users/Lenovo/Desktop/hw/final_project/final_project.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
+read_ip -quiet C:/Users/Lenovo/Desktop/hw/final_project/final_project.srcs/sources_1/ip/frame_buffer/frame_buffer.xci
 set_property used_in_implementation false [get_files -all c:/Users/Lenovo/Desktop/hw/final_project/final_project.gen/sources_1/ip/frame_buffer/frame_buffer_ooc.xdc]
 
 OPTRACE "Adding files" END { }
