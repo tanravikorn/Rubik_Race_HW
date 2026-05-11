@@ -1,19 +1,9 @@
-# Output folder
-output/
+# Ignore everything in the repo root
+/*
 
-# Output files
-out1.txt
-out2.txt
-out3.txt
-out4.txt
-out5.txt
-out6.txt
+# But keep this gitignore so it can be tracked
+!.gitignore
 
-# Executable files
-*.exe
-
-
-
-# Documentation files
-statement.md
-datatest.md
+# Keep the final_project folder and all its contents
+!/final_project/
+!/final_project/**
